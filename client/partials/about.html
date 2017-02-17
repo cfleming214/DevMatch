@@ -1,0 +1,76 @@
+<h1 id="title">Current Developers</h1>
+
+
+<div id="team-window">
+  <ul id="developer-list">
+    <li ng-repeat="profile in profiles">
+      <div class="profile-list-item">
+          <input type="radio" class="profile-selector" ng-click="alert(profile);"></input>
+          <div class="profile-pic"></div>
+          <div class="profile-description">
+            <p>Name: {{profile.profileName}}
+              <br>
+              Skills: {{profile.profileSkills}}, Skill-Level: {{profile.profilePercentage}}%;
+              <br>
+               Message: {{profile.profileMessage}}</p>
+          </div>
+      </div>
+    </li>
+    <!-- <li>
+      <div class="profile-list-item">
+          <button class="profile-selector"></button>
+          <div class="profile-pic"></div>
+          <div class="profile-description"></div>
+      </div>
+    </li>
+    <li>
+      <div class="profile-list-item">
+          <button class="profile-selector"> </button>
+          <div class="profile-pic"></div>
+          <div class="profile-description"></div>
+      </div>
+    </li>
+    <li>
+      <div class="profile-list-item">
+          <button class="profile-selector"> </button>
+          <div class="profile-pic"></div>
+          <div class="profile-description">{{profileDescription}}</div>
+      </div>
+    </li> -->
+  </ul>
+
+<div id="current-team">
+    <h1 id="team-name">{{projectName}}</h1>
+
+    <div id="team-members">
+      <div class="newTeamMember" ng-repeat="member in team">
+        <div class="teamprofilepic"></div>
+        <div id="div1"><p>
+          {{member.profileName}}, {{member.profileSkills}}
+          <br>
+          Skill-Level: {{member.profilePercentage}}
+        </p>
+      </div>
+      </div>
+
+    </div>
+
+<div id="team-stats">
+    <div id="info-box">  project owner: {{projectOwner}}
+      <br>
+      phone: {{contactNumber}}
+      <br>
+      email: {{contactEmail}}
+      <br>
+      project description: {{projectDescription}}
+    </div>
+    <div id="stats-graph">
+      <p> CURRENT TEAM SKILL AVERAGE: {{teamAverage}} </p>
+    </div>
+    <button id="team-submit" ng-click="postdb()">Submit Team</button>
+</div>
+
+
+
+
+</div>

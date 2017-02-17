@@ -1,0 +1,25 @@
+{
+  "name": "DevMatch",
+  "version": "0.1.0",
+  "description": "Developer matching platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "1.5.11",
+    "angular-material": "1.0.5",
+    "angular-mocks": "1.5.11",
+    "angular-route": "1.5.11",
+    "chai": "^3.0.0",
+    "ecstatic": "^0.8.0",
+    "express": "^4.14.0",
+    "mocha": "^2.2.5",
+    "mocha-phantomjs": "^4.0.1",
+    "nodemon": "^1.9.2",
+    "pg": "^6.1.2",
+    "sequelize": "^3.27.0"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <script type="text/javascript" src="angular/angular.min.js"></script>
+  <script type="text/javascript" src="angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="./controllers/homeController.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+  <script type="text/javascript" src="./controllers/aboutController.js"></script>
+  <script type="text/javascript" src="./controllers/createController.js"></script>
+  <script type="text/javascript" src="./factories/userFactory.js"></script>
+  <script type="text/javascript" src="./factories/messageFactory.js"></script>
+
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+  <link rel="stylesheet" href="style.css">
+    <div id="menu">
+
+      <a ng-href="/#/createteam">Create a Team</a>
+      <a ng-href="/#/home">Home</a>
+
+      <!-- <div id="logo">LOGO</div> -->
+
+    </div>
+
+</head>
+
+<body ng-app='myApp'>
+  <div class="container" ng-view></div>
+
+
+
+
+
+</body>
+</html>
